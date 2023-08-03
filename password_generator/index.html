@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div id="random-password">
+      <div class="heading">
+        <h2 class="h2">Random Password Generator</h2>
+      </div>
+      <div class="show">
+        <div class="txt_box">
+          <input type="text" id="password"/> <i style="font-size:24px" class="fa" id="copy">&#xf0c5;</i>
+        </div>
+      </div>
+        <div id="settings" class="setting">
+          <h4 class="h4" >Customise Password</h4>
+          <div class="custom_option1">
+            <label for="length" class="custom_btn">Length:</label>
+            <input type="number" id="length" value="16" min="8" max="64" class="custom_btn"/> 
+          </div>
+          <div class="custom_option2" >
+            <div id="try">
+          <label for="numbers" class="custom_btn">Include Numbers:</label>
+          <div>
+            <input type="checkbox" id="numbers" checked />
+          </div>
+            </div>
+            <div id="try">
+          <label for="symbols" class="custom_btn">Include Symbols:</label>
+          <input type="checkbox" id="symbols" checked class="custom_btn" />
+          </div>
+          </div>
+        </div>
+        <button id="generate">Generate Password</button>
+      </div>
+      <script src="script.js"></script>
+    </body>
+</html>
